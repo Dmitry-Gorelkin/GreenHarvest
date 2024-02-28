@@ -1,0 +1,138 @@
+.header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+
+  @media screen and (min-width: 375px) {
+    width: auto;
+    left: calc(100% / 2 - 375px / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    left: calc(100% / 2 - 768px / 2);
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: calc(100% / 2 - 1280px / 2);
+  }
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    align-items: baseline;
+  }
+}
+
+.header-nav-box {
+  display: none;
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.header-nav {
+  margin-right: 20px;
+}
+
+.header-nav-list {
+  display: flex;
+
+  gap: 8px;
+}
+
+.header-nav-item {
+}
+
+.header-nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 114px;
+  height: 44px;
+
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--main-text);
+}
+
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 157px;
+  height: 52px;
+
+  cursor: pointer;
+
+  border-radius: 30px;
+  border: none;
+
+  background-color: var(--background-2);
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--main-text);
+
+  &:hover {
+    background-color: var(--hover-btn);
+  }
+}
+
+.heder-menu {
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.heder-menu-icon {
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}

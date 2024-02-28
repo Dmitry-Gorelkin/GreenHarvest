@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.logo-text {
+  width: 148px;
+  height: 12px;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 168px;
+    height: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
