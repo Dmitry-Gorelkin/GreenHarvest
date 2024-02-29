@@ -1,0 +1,96 @@
+.how-it-works {
+  background-color: var(--background);
+  //   background-color: var(--background-2);
+}
+
+.how-it-works-box {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
+}
+
+.how-it-works-img-box {
+  display: block;
+  width: 100%;
+
+  padding: 40px 20px;
+
+  background-color: var(--background-2);
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 64px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 630px;
+    padding: 100px;
+  }
+}
+
+.how-it-works-img {
+  display: block;
+
+  height: 450px;
+
+  border-radius: 30px;
+
+  background-color: rgba(20, 20, 20, 0.3);
+
+  object-fit: cover;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 640px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 559px;
+  }
+}
+
+.how-it-works-list-box {
+  display: block;
+  width: 100%;
+
+  padding: 80px 20px;
+
+  //   background-color: var(--background);
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 159px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 650px;
+    padding: 100px 100px 160px 100px;
+  }
+}
+
+.how-it-works-list-title {
+}
+
+.how-it-works-list-text {
+}
+
+.how-it-works-list {
+}
+
+.how-it-works-item {
+}
