@@ -1,0 +1,269 @@
+.your-order {
+  background-color: var(--background-2);
+}
+
+.your-order-title {
+  display: block;
+
+  width: 100%;
+
+  margin-bottom: 29px;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 104%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--main-text);
+
+  @media screen and (min-width: 375px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 640px;
+
+    margin-bottom: 25px;
+
+    font-size: 64px;
+    line-height: 100%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 751px;
+  }
+}
+
+.your-order-title-special {
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.your-order-text {
+  display: block;
+
+  width: 100%;
+
+  margin-bottom: 40px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--main-text);
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 640px;
+
+    margin-bottom: 50px;
+
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 742px;
+  }
+}
+
+.your-order-box-form-follow {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.your-order-form-box {
+  display: block;
+  width: 100%;
+
+  border-radius: 30px;
+  padding: 40px 20px;
+
+  background-color: var(--main-text);
+  @media screen and (min-width: 375px) {
+    // width: 335px;
+    // height: 533px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // width: 628px;
+    // height: 534px;
+
+    padding: 50px 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 529px;
+    // height: 534px;
+
+    padding: 50px;
+  }
+}
+
+.your-order-form-title {
+  display: block;
+
+  width: 100%;
+
+  margin-bottom: 40px;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--text);
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.your-order-form-title-special {
+  color: var(--background-2);
+}
+
+.your-order-form-title-accent {
+  color: var(--background);
+}
+
+.your-order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.your-order-form-input {
+  display: block;
+
+  width: 100%;
+
+  padding: 14px 220px 14px 16px;
+  margin-bottom: 15px;
+
+  border: 1px solid rgba(20, 20, 20, 0.2);
+  border-radius: 30px;
+
+  @media screen and (min-width: 375px) {
+    // width: 295px;
+    // height: 46px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.your-order-form-textarea {
+  display: block;
+
+  //   padding: 14px 219px 59px 16px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid rgba(20, 20, 20, 0.2);
+  border-radius: 20px;
+
+  @media screen and (min-width: 375px) {
+    // width: 295px;
+    // height: 91px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.your-order-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 16px 129px;
+
+  border-radius: 30px;
+  border: none;
+
+  background-color: var(--main-text);
+}
+
+.your-order-follow-box {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  border-radius: 30px;
+  padding: 40px 20px;
+
+  @media screen and (min-width: 375px) {
+    // width: 335px;
+    // height: 465px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+.your-order-follow-img {
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+.your-order-follow-title {
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+.your-order-follow-list {
+}
+.your-order-follow-item {
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
