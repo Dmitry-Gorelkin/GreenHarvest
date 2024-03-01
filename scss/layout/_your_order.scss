@@ -48,11 +48,12 @@
 
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 129%;
   color: var(--main-text);
 
   @media screen and (min-width: 375px) {
+    font-size: 14px;
   }
 
   @media screen and (min-width: 768px) {
@@ -72,6 +73,7 @@
 .your-order-box-form-follow {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   gap: 20px;
 
@@ -96,21 +98,18 @@
   padding: 40px 20px;
 
   background-color: var(--main-text);
+
   @media screen and (min-width: 375px) {
-    // width: 335px;
-    // height: 533px;
   }
 
   @media screen and (min-width: 768px) {
-    // width: 628px;
-    // height: 534px;
+    width: 628px;
 
     padding: 50px 100px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 529px;
-    // height: 534px;
 
     padding: 50px;
   }
@@ -125,16 +124,18 @@
 
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 108%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: var(--text);
 
   @media screen and (min-width: 375px) {
+    font-size: 24px;
   }
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -158,45 +159,128 @@
   display: block;
 
   width: 100%;
+  height: 46px;
 
-  padding: 14px 220px 14px 16px;
+  padding: 14px 16px;
   margin-bottom: 15px;
+
+  outline: none;
 
   border: 1px solid rgba(20, 20, 20, 0.2);
   border-radius: 30px;
 
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--text);
+
   @media screen and (min-width: 375px) {
-    // width: 295px;
-    // height: 46px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 768px) {
+    height: 52px;
+
+    font-size: 16px;
+    line-height: 125%;
   }
 
   @media screen and (min-width: 1280px) {
+  }
+
+  &::placeholder {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: var(--text);
+
+    @media screen and (min-width: 375px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    @media screen and (min-width: 1280px) {
+    }
+  }
+
+  &:focus {
+    border-color: var(--background-2);
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-color: red;
+  }
+
+  &:not(:placeholder-shown):valid {
+    border-color: green;
   }
 }
 
 .your-order-form-textarea {
   display: block;
+  width: 100%;
+  height: 91px;
 
-  //   padding: 14px 219px 59px 16px;
+  padding: 14px 16px;
 
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+
+  outline: none;
 
   border: 1px solid rgba(20, 20, 20, 0.2);
   border-radius: 20px;
 
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--text);
+
   @media screen and (min-width: 375px) {
-    // width: 295px;
-    // height: 91px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 768px) {
+    height: 95px;
+
     margin-bottom: 25px;
   }
 
   @media screen and (min-width: 1280px) {
+  }
+
+  &:focus {
+    border-color: var(--background-2);
+  }
+
+  &::placeholder {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: var(--text);
+
+    @media screen and (min-width: 375px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    @media screen and (min-width: 1280px) {
+    }
   }
 }
 
@@ -206,64 +290,151 @@
   align-items: center;
 
   width: 100%;
-
-  padding: 16px 129px;
+  height: 50px;
 
   border-radius: 30px;
   border: none;
 
-  background-color: var(--main-text);
+  background-color: var(--background);
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 129%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--main-text);
+
+  @media screen and (min-width: 375px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 52px;
+
+    font-size: 18px;
+    line-height: 111%;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .your-order-follow-box {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 
   width: 100%;
 
   border-radius: 30px;
   padding: 40px 20px;
 
+  background: var(--background);
+
   @media screen and (min-width: 375px) {
-    // width: 335px;
-    // height: 465px;
   }
 
   @media screen and (min-width: 768px) {
+    width: 628px;
+
+    padding: 50px;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 527px;
   }
 }
+
 .your-order-follow-img {
+  display: block;
+  width: 100%;
+
+  border-radius: 15px;
+
+  margin-bottom: 20px;
+
+  object-fit: cover;
+
+  background-color: rgba(20, 20, 20, 0.3);
+
   @media screen and (min-width: 375px) {
+    width: auto;
+    height: 273px;
   }
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1280px) {
   }
 }
+
 .your-order-follow-title {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 129%;
+  letter-spacing: -0.01em;
+  color: rgba(251, 251, 251, 0.5);
+
   @media screen and (min-width: 375px) {
+    font-size: 14px;
   }
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    line-height: 111%;
   }
 
   @media screen and (min-width: 1280px) {
   }
 }
+
 .your-order-follow-list {
-}
-.your-order-follow-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
   @media screen and (min-width: 375px) {
   }
 
   @media screen and (min-width: 768px) {
+    gap: 12px;
   }
 
   @media screen and (min-width: 1280px) {
   }
+}
+
+.your-order-follow-item {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 108%;
+  letter-spacing: -0.01em;
+  color: var(--main-text);
+
+  @media screen and (min-width: 375px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.your-order-form-link {
+  color: var(--main-text);
 }

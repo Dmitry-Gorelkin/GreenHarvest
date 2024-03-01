@@ -45,10 +45,11 @@
 
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 129%;
   color: var(--text);
   @media screen and (min-width: 375px) {
+    font-size: 14px;
   }
 
   @media screen and (min-width: 768px) {
@@ -62,6 +63,7 @@
   @media screen and (min-width: 1280px) {
   }
 }
+
 .reviews-list {
   display: flex;
 
@@ -131,7 +133,7 @@
 
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 125%;
   letter-spacing: -0.02em;
   text-align: center;
@@ -139,6 +141,8 @@
 
   @media screen and (min-width: 375px) {
     width: 282px;
+
+    font-size: 16px;
   }
 
   @media screen and (min-width: 768px) {
@@ -157,12 +161,13 @@
 
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 129%;
   text-align: center;
   color: rgba(4, 3, 6, 0.4);
 
   @media screen and (min-width: 375px) {
+    font-size: 14px;
   }
 
   @media screen and (min-width: 768px) {
