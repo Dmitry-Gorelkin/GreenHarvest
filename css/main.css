@@ -562,7 +562,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .vegetables-list {
-    gap: none;
+    gap: unset;
     column-gap: 20px;
     row-gap: 28px;
   }
