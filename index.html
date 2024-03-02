@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenHarvest</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>GreenHarvest</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
   </head>
   <body>
@@ -30,13 +31,13 @@
           <nav class="header-nav">
             <ul class="header-nav-list">
               <li class="header-nav-item">
-                <a href="" class="header-nav-link">How It Works</a>
+                <a href="#how-it-works" class="header-nav-link">How It Works</a>
               </li>
               <li class="header-nav-item">
-                <a href="" class="header-nav-link">Vegetables</a>
+                <a href="#vegetables" class="header-nav-link">Vegetables</a>
               </li>
               <li class="header-nav-item">
-                <a href="" class="header-nav-link">Reviews</a>
+                <a href="#reviews" class="header-nav-link">Reviews</a>
               </li>
             </ul>
           </nav>
@@ -65,12 +66,16 @@
         </div>
       </section>
       <!-- HOW IT WORKS -->
-      <!-- loading="lazy" -->
-      <section class="how-it-works">
+      <section class="how-it-works" id="how-it-works">
         <div class="how-it-works-box conteiner-special">
           <div class="how-it-works-img-box">
             <h2 class="visually-hidden">How it works</h2>
-            <img class="how-it-works-img" src="./img/img-how_it_works.jpg" alt="how-it-works" />
+            <img
+              class="how-it-works-img"
+              src="./img/img-how_it_works.jpg"
+              alt="how-it-works"
+              loading="lazy"
+            />
           </div>
           <div class="how-it-works-steps-box">
             <h3 class="how-it-works-steps-title">
@@ -121,7 +126,7 @@
         </div>
       </section>
       <!-- VEGETABLES -->
-      <section class="vegetables">
+      <section class="vegetables" id="vegetables">
         <div class="conteiner section">
           <h2 class="vegetables-title">
             organic <span class="vegetables-title-special">vegetables</span>
@@ -207,7 +212,7 @@
         </div>
       </section>
       <!-- REVIEWS -->
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="conteiner section">
           <h2 class="reviews-title">
             reviews from our <span class="reviews-title-special">customers</span>
@@ -339,9 +344,15 @@
           </div>
           <div class="footer-menu-contact-box">
             <ul class="footer-menu-list">
-              <li class="footer-menu-item"><a class="footer-menu-link" href="">how it works</a></li>
-              <li class="footer-menu-item"><a class="footer-menu-link" href="">vegetables</a></li>
-              <li class="footer-menu-item"><a class="footer-menu-link" href="">reviews</a></li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#how-it-works">how it works</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#vegetables">vegetables</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#reviews">reviews</a>
+              </li>
             </ul>
             <ul class="footer-contact-list">
               <li class="footer-contact-item">
