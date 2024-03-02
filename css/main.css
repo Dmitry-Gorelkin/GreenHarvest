@@ -418,18 +418,18 @@ img {
   }
 }
 
-.advertisement-text-box {
+.advertisement-conteiner {
   padding-left: 10px;
   padding-right: 10px;
 }
 @media screen and (min-width: 768px) {
-  .advertisement-text-box {
+  .advertisement-conteiner {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .advertisement-text-box {
+  .advertisement-conteiner {
     padding-left: 100px;
     padding-right: 100px;
   }
