@@ -103,6 +103,10 @@
   @media screen and (min-width: 1280px) {
     padding: 32px;
   }
+
+  &:hover {
+    transform: scale(1.07);
+  }
 }
 
 .vegetables-caption {

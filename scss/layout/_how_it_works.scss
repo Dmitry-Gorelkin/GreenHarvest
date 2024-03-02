@@ -234,6 +234,10 @@
     letter-spacing: -0.02em;
     color: var(--main-text);
   }
+
+  &:hover {
+    transform: scale(1.07);
+  }
 }
 
 .how-it-works-steps-item-text {
