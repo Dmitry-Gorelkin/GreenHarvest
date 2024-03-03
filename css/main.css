@@ -231,25 +231,242 @@ img {
   background-color: var(--hover-btn);
 }
 
-.heder-menu {
+.heder-menu-open-box {
   cursor: pointer;
 }
 @media screen and (min-width: 1280px) {
-  .heder-menu {
+  .heder-menu-open-box {
     display: none;
   }
 }
 
-.heder-menu-icon {
+.heder-menu-open-icon {
   width: 32px;
   height: 32px;
 }
 @media screen and (min-width: 768px) {
-  .heder-menu-icon {
+  .heder-menu-open-icon {
     width: 40px;
     height: 40px;
   }
 }
+.is-hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.header-menu-box {
+  display: block;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .header-menu-box {
+    top: 0px;
+    background-color: rgba(20, 20, 20, 0.4);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-menu-box {
+    display: none;
+  }
+}
+.header-menu-box.open {
+  animation: animateOpenMenu 290ms ease-in-out forwards;
+}
+.header-menu-box.close {
+  animation: animateCloseMenu 290ms ease-in-out forwards;
+}
+
+@keyframes animateOpenMenu {
+  0% {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+@keyframes animateCloseMenu {
+  100% {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 240px;
+  padding-bottom: 40px;
+  background-color: var(--background-2);
+}
+@media screen and (min-width: 768px) {
+  .header-menu {
+    width: 351px;
+    padding-top: 360px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-menu {
+    display: none;
+  }
+}
+.header-menu.open {
+  animation: animateOpenMenuBox 300ms ease-in-out forwards;
+}
+@media screen and (min-width: 768px) {
+  .header-menu.open {
+    animation: animateOpenMenuBoxTablet 300ms ease-in-out forwards;
+  }
+}
+.header-menu.close {
+  animation: animateCloseMenuBox 300ms ease-in-out forwards;
+}
+@media screen and (min-width: 768px) {
+  .header-menu.close {
+    animation: animateCloseMenuBoxTablet 300ms ease-in-out forwards;
+  }
+}
+
+@keyframes animateOpenMenuBox {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes animateCloseMenuBox {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes animateOpenMenuBoxTablet {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 351px;
+  }
+}
+@keyframes animateCloseMenuBoxTablet {
+  0% {
+    width: 351px;
+  }
+  100% {
+    width: 0;
+  }
+}
+.header-menu-close {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .header-menu-close {
+    top: 32px;
+    right: 32px;
+  }
+}
+.header-menu-close:hover, .header-menu-close:focus {
+  transform: scale(1.3);
+}
+
+.header-menu-close-icon {
+  width: 32px;
+  height: 32px;
+}
+@media screen and (min-width: 768px) {
+  .header-menu-close-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.header-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header-menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 42px;
+  cursor: pointer;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--main-text);
+}
+@media screen and (min-width: 768px) {
+  .header-menu-link {
+    width: 123px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+.header-menu-link:hover, .header-menu-link:focus {
+  color: var(--background-2);
+  background-color: var(--main-text);
+}
+
+.header-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--main-text);
+}
+@media screen and (min-width: 768px) {
+  .header-menu-btn {
+    width: 157px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 111%;
+  }
+}
+.header-menu-btn:hover, .header-menu-btn:focus {
+  color: var(--background-2);
+  background-color: var(--main-text);
+}
+
 .hero {
   background-color: var(--background);
 }

@@ -32,6 +32,12 @@
         <symbol id="header-menu" viewBox="0 0 32 24">
             <path d="M2.6665 2H29.3332M2.6665 12H15.9998M2.6665 22H29.3332" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
         </symbol>
+
+
+        <symbol id="header-menu-close" viewBox="0 0 40 40">
+            <path d="M30 10L10 30" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 10L30 30" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
     <defs>
 </svg>
 

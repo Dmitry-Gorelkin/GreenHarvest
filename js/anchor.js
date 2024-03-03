@@ -6,7 +6,7 @@ $('a[href^="#"]').on('click', function (event) {
       {
         scrollTop: anchor.offset().top,
       },
-      500
+      700
     );
   }
 });

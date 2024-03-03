@@ -4,12 +4,12 @@ $(function () {
       {
         scrollTop: 0,
       },
-      1000
+      500
     );
   });
 });
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 600) {
+  if ($(this).scrollTop() > 300) {
     $('.scrollup').fadeIn();
   } else {
     $('.scrollup').fadeOut();
