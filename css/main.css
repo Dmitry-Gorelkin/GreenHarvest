@@ -1204,6 +1204,7 @@ img {
   position: absolute;
   top: 0;
   cursor: pointer;
+  background-color: rgba(122, 49, 69, 0.1);
 }
 @media screen and (min-width: 768px) {
   .reviews-list-btn {
@@ -1212,7 +1213,7 @@ img {
 }
 .reviews-list-btn:hover .reviews-list-btn-icon {
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: rgba(122, 49, 69, 0.5);
+  fill: rgba(122, 49, 69, 0.6);
 }
 
 .reviews-list-btn-prev {
@@ -1228,8 +1229,8 @@ img {
 }
 
 .reviews-list-btn-icon {
-  fill: none;
   width: 75px;
+  fill: rgba(122, 49, 69, 0.1);
 }
 @media screen and (min-width: 375px) {
   .reviews-list-btn-icon {
