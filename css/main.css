@@ -723,19 +723,6 @@ img {
     line-height: 125%;
   }
 }
-.how-it-works-steps-item::after {
-  display: block;
-  content: "";
-  z-index: 1;
-  position: absolute;
-  left: 24px;
-  top: 12px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  opacity: 0.3;
-  background-color: var(--background-2);
-}
 .how-it-works-steps-item::before {
   display: flex;
   justify-content: center;
@@ -748,6 +735,7 @@ img {
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(122, 49, 69, 0.3);
   background-color: var(--background-2);
   font-family: var(--font-family);
   font-weight: 600;

@@ -187,26 +187,6 @@
   @media screen and (min-width: 1280px) {
   }
 
-  &::after {
-    display: block;
-    content: '';
-
-    z-index: 1;
-
-    position: absolute;
-    left: 24px;
-    top: 12px;
-
-    width: 52px;
-    height: 52px;
-
-    border-radius: 50%;
-
-    opacity: 0.3;
-
-    background-color: var(--background-2);
-  }
-
   &::before {
     display: flex;
     justify-content: center;
@@ -224,6 +204,8 @@
     height: 42px;
 
     border-radius: 50%;
+
+    box-shadow: 0 0 0 5px rgba(122, 49, 69, 0.3);
 
     background-color: var(--background-2);
 
