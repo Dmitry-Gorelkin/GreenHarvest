@@ -40,10 +40,13 @@
 
     width: 100%;
 
+    margin-bottom: 100px;
+
     gap: unset;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 125px;
   }
 }
 
