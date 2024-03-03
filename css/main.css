@@ -728,7 +728,6 @@ img {
   justify-content: center;
   align-items: center;
   content: counter(section);
-  z-index: 2;
   position: absolute;
   left: 29px;
   top: 17px;
