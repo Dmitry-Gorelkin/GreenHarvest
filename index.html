@@ -248,38 +248,50 @@
             Words of our customers: impressions and opinions about the quality of our services and
             the freshness of our products.
           </p>
-          <ul class="reviews-list">
-            <li class="reviews-item">
-              <img src="./img/reviews/john-wax.jpg" alt="John Wax" class="reviews-img" />
-              <h3 class="reviews-caption-title">John Wax</h3>
-              <p class="reviews-caption-text">
-                These vegetables are my secret to delicious and healthy meals. The quality is always
-                at the highest level, the aroma and taste are enchanting. I advise every fan of real
-                products!
-              </p>
-            </li>
-            <li class="reviews-item item-1">
-              <img
-                src="./img/reviews/victoria-romashenko.jpg"
-                alt="Victoria Romashenko"
-                class="reviews-img"
-              />
-              <h3 class="reviews-caption-title">Victoria Romashenko</h3>
-              <p class="reviews-caption-text">
-                I love how fast and fresh the vegetables are delivered. Salads always turn out so
-                appetizing, and soups are real masterpieces. The quality is impeccable!
-              </p>
-            </li>
-            <li class="reviews-item item-2">
-              <img src="./img/reviews/ihor-trachuk.jpg" alt="Ihor Trachuk" class="reviews-img" />
-              <h3 class="reviews-caption-title">Ihor Trachuk</h3>
-              <p class="reviews-caption-text">
-                Recently tried my fresh tomatoes and peppers - amazing! The authenticity of the
-                taste, as if from the garden directly to my table. It is now my main vegetable
-                supplier.
-              </p>
-            </li>
-          </ul>
+          <div class="reviews-list-box">
+            <ul class="reviews-list" data-slide-js>
+              <li class="reviews-item mob">
+                <img src="./img/reviews/john-wax.jpg" alt="John Wax" class="reviews-img" />
+                <h3 class="reviews-caption-title">John Wax</h3>
+                <p class="reviews-caption-text">
+                  These vegetables are my secret to delicious and healthy meals. The quality is
+                  always at the highest level, the aroma and taste are enchanting. I advise every
+                  fan of real products!
+                </p>
+              </li>
+              <li class="reviews-item">
+                <img
+                  src="./img/reviews/victoria-romashenko.jpg"
+                  alt="Victoria Romashenko"
+                  class="reviews-img"
+                />
+                <h3 class="reviews-caption-title">Victoria Romashenko</h3>
+                <p class="reviews-caption-text">
+                  I love how fast and fresh the vegetables are delivered. Salads always turn out so
+                  appetizing, and soups are real masterpieces. The quality is impeccable!
+                </p>
+              </li>
+              <li class="reviews-item mob tablet">
+                <img src="./img/reviews/ihor-trachuk.jpg" alt="Ihor Trachuk" class="reviews-img" />
+                <h3 class="reviews-caption-title">Ihor Trachuk</h3>
+                <p class="reviews-caption-text">
+                  Recently tried my fresh tomatoes and peppers - amazing! The authenticity of the
+                  taste, as if from the garden directly to my table. It is now my main vegetable
+                  supplier.
+                </p>
+              </li>
+            </ul>
+            <div class="reviews-list-btn reviews-list-btn-prev" data-btn-prev-js>
+              <svg class="reviews-list-btn-icon">
+                <use href="./img/icons.svg#icon-circle-left"></use>
+              </svg>
+            </div>
+            <div class="reviews-list-btn reviews-list-btn-next" data-btn-next-js>
+              <svg class="reviews-list-btn-icon">
+                <use class="btn-icon" href="./img/icons.svg#icon-circle-right"></use>
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
       <!-- YOUR ORDER -->
@@ -413,5 +425,6 @@
     <script src="./js/anchor.js"></script>
     <script src="./js/scrollup.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

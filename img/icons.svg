@@ -27,17 +27,23 @@
             <path d="M160.564 14.8V2.58H155.999V0.2H168V2.58H163.456V14.8H160.564Z" fill="#FBFBFB" />
         </symbol>
 
-
-
         <symbol id="header-menu" viewBox="0 0 32 24">
             <path d="M2.6665 2H29.3332M2.6665 12H15.9998M2.6665 22H29.3332" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
         </symbol>
-
 
         <symbol id="header-menu-close" viewBox="0 0 40 40">
             <path d="M30 10L10 30" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M10 10L30 30" stroke="#FBFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
         </symbol>
+
+        <symbol id="icon-circle-left" viewBox="0 0 32 32">
+            <path d="M20.914 9.914l-2.829-2.829-8.914 8.914 8.914 8.914 2.828-2.828-6.086-6.086z"></path>
+        </symbol>
+
+        <symbol id="icon-circle-right" viewBox="0 0 32 32">
+            <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
+        </symbol>
+
     <defs>
 </svg>
 

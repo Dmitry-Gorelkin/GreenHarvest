@@ -15,6 +15,7 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: var(--text);
+
   @media screen and (min-width: 375px) {
     font-size: 48px;
   }
@@ -48,6 +49,7 @@
   font-size: 12px;
   line-height: 129%;
   color: var(--text);
+
   @media screen and (min-width: 375px) {
     font-size: 14px;
   }
@@ -61,6 +63,20 @@
   }
 
   @media screen and (min-width: 1280px) {
+  }
+}
+
+.reviews-list-box {
+  position: relative;
+
+  &:hover {
+    .reviews-list-btn {
+      background-color: rgba(122, 49, 69, 0.2);
+    }
+
+    .reviews-list-btn-icon {
+      fill: rgba(122, 49, 69, 0.3);
+    }
   }
 }
 
@@ -89,7 +105,6 @@
   padding: 20px 16px 38px 16px;
 
   border-radius: 24px;
-
   border: 1px solid rgba(122, 49, 69, 0.3);
 
   background-color: var(--main-text);
@@ -180,18 +195,92 @@
   }
 }
 
-// временная заглушка, для сохранения стилей
-
-.item-1 {
+.mob {
   display: none;
+
+  @media screen and (min-width: 375px) {
+  }
+
   @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.tablet {
+  display: none;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
     display: flex;
   }
 }
 
-.item-2 {
-  display: none;
+.reviews-list-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 130px;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 175px;
+  }
+
   @media screen and (min-width: 1280px) {
-    display: flex;
+  }
+
+  &:hover {
+    .reviews-list-btn-icon {
+      transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      fill: rgba(122, 49, 69, 0.5);
+    }
+  }
+}
+
+.reviews-list-btn-prev {
+  left: 0;
+
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.reviews-list-btn-next {
+  right: 0;
+
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.reviews-list-btn-icon {
+  fill: none;
+  width: 75px;
+
+  @media screen and (min-width: 375px) {
+    width: 100px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 125px;
+  }
+
+  @media screen and (min-width: 1280px) {
   }
 }
