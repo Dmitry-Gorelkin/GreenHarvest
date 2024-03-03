@@ -121,19 +121,68 @@
 
   @media screen and (min-width: 1280px) {
   }
-
-  // animation: animateSlidMob 400ms ease-in-out forwards;
 }
 
-// @keyframes animateSlidMob {
-//   0% {
-//     transform: scale(0.9);
-//   }
+.mob {
+  display: none;
 
-//   100% {
-//     transform: scale(1);
-//   }
-// }
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.tablet {
+  @media screen and (min-width: 375px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+.reviews-item-animateNext {
+  animation: animateNext 400ms ease-in forwards;
+}
+
+.reviews-item-animatePrev {
+  animation: animatePrev 400ms ease-in forwards;
+}
+
+@keyframes animateNext {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animatePrev {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
 
 .reviews-img {
   display: block;
@@ -204,35 +253,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-  }
-}
-
-.mob {
-  display: none;
-
-  @media screen and (min-width: 375px) {
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-
-  @media screen and (min-width: 1280px) {
-  }
-}
-
-.tablet {
-  display: none;
-
-  @media screen and (min-width: 375px) {
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1280px) {
-    display: flex;
   }
 }
 
